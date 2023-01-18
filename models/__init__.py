@@ -11,7 +11,7 @@ from models.review import Review
 storage_type = getenv("HBNB_TYPE_STORAGE")
 
 if storage_type == "db":
-
+    """select a db to use"""
     from models.engine.db_storage import DBStorage
     storage = DBStorage()
     storage.reload()
